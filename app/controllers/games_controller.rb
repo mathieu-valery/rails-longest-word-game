@@ -25,12 +25,12 @@ private
   def score_and_message(attempt, grid)
     if included?(attempt.upcase, grid)
       if english_word?(attempt)
-        return "well done! You win!"
+        return "Well done! You win!"
       else
-        return "sorry but #{attempt} is not an english word"
+        return "Sorry but #{attempt} is not an english word"
       end
     else
-      return "sorry bro' but #{attempt} is not in the grid"
+      return "Sorry bro' but #{attempt} is not in the grid"
     end
   end
 
